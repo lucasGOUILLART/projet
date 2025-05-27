@@ -1,4 +1,3 @@
-
 {
   "functions": {
     "api/*.php": {
@@ -7,5 +6,13 @@
   },
   "routes": [
     { "src": "/(.*)",  "dest": "/api/index.php" }
-  ]
+  ]{
+  "env": {
+    "PG_HOST": "npg_D36LGaWpS1mM0ep-little-brook-a93znH8a-pooler.gwc.azure.neon.tech",
+    "PG_PORT": "5432",
+    "PG_DB": "projetlucas",
+    "PG_USER": "projetlucas_owner",
+    "PG_PASSWORD": "npg_D36LGaWpS1mM0ep",
+    "PG_ENDPOINT": "little-brook-a93znH8a"
+  }
 }
