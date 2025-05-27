@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\ethan\source\repos\new_solver_vinfini\main.c(41,20): warning C4013: 'isdigit' non défini(e) ; extern retournant int pris par défaut
+C:\Users\ethan\source\repos\new_solver_vinfini\main.c(146,9): warning C4013: 'free' non défini(e) ; extern retournant int pris par défaut
+  new_solver_vinfini.vcxproj -> C:\Users\ethan\source\repos\new_solver_vinfini\x64\Debug\new_solver_vinfini.exe
