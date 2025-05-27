@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+header {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(90deg,#F585D1, #C63B7C, #892966, #45164D, #892966, #C63B7C, #F585D1);
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Press Start 2P', monospace;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    
+    
+}
+
+.bouton {
+    
+    display: inline-block;
+    background: linear-gradient(90deg,#F585D1, #C63B7C, #892966, #45164D, #892966, #C63B7C, #F585D1);
+    background-size: 400% 400%;
+    animation: rainbow 5s linear infinite alternate;
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', monospace;
+
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.connexion {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Press Start 2P', monospace;
+    
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+    max-width: 400px;
+    margin: 48px auto;
+}
+
+body {
+    background-image: url('image/backgroundarcade.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+
+.form1 p {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+.form1 label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center;
+}
+
+.bouton2 {
+    display: inline-block;
+    background: linear-gradient(90deg,#F585D1, #C63B7C, #892966, #45164D, #892966, #C63B7C, #F585D1);
+    background-size: 400% 400%;
+    animation: rainbow 5s linear infinite alternate;
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', monospace;
+    min-width: 60px;
+    font-size: 0.8em;
+    padding: 6px 12px;
+    
+}
+
+.form1 h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.progessiontexte {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.jeu{
+    text-align: center;
+    border: solid;
+    font-size: 40px;
+    border-radius: 15px;
+}
+
+
+.form1 input{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-family: 'Press Start 2P', monospace;
+}
+
+
+.grille {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+/*couleur des cases*/
+
+.name_case {
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.vehicules,
+.actions {
+    margin: 10px 0;
+}
+
+
+.end{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: url('image/finito.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+form button {
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.grille_jeu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 0;
+}
+
+.grille_bouton {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    
+}
+
+.achievements-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+.achievement {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.achievement.unlocked {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    opacity: 1;
+}
+
+.achievement img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5rem;
+}
+
+.achievementh2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.2em;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.achievement-progress {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center ;
+}
+
+.coin-button {
+    width: auto;
+    height: auto;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    transform: scale(3); /* Agrandit à 150% sans décaler */
+    transform-origin: center;
+}
+
+.coin-button img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.2s;
+    display: block;
+}
+
+.coin-button:active img {
+    transform: scale(0.80);
+}
+
+.clicker{
+    font-family: "Press Start 2P", monospace;
+    color : white;
+    text-align: center;
+}
+
+.coins {
+    font-family: "Press Start 2P", monospace;
+    color : white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.grille_bouton {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1024px;
+    height: 1024px;
+    background-image: url("image/fond.png")
+}
+.actions{
+    position:relative;
+    left: 300px;
+    top: -425px;
+}
+.grille{
+    position: relative;
+}
+.solveur {
+    position:relative;
+    left: 220px;
+    top: -80px;
+}
+
+#buttonsolver{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: "Press Start 2P", monospace;
+    text-align: center;
+}
+
+.vehicules{
+    position: relative;
+    top:35px;
+}
+
+.step{
+    position :absolute;
+    width: 300px;
+    height: 100px;
+}
+
+#High{
+    position :relative;
+    left:90px;
+}
+#Left{
+    position :relative;
+    top:50px;
+}
+#Right{
+    position :relative;
+    top:50px;
+}
+#Down{
+    position :relative;
+    top:50px;
+}
+
+
+
+.menu_campagnes{
+    position: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace;
+    color : white;
+}
+.menu_campagnes h3{
+    position: center;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace;
+    color : white;
+}
+
+.menu_campagnes li{
+    list-style: none;
+    opacity: 1;
+}
+
+.menu_campagnes li a{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.menu_campagnes li a:hover{
+    background: #444;
+    color : white;
+}
+
+
+nav {
+    position: relative;
+    display: inline-block;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu > .deroulant {
+    position: relative;
+}
+.menu > .deroulant > a {
+    display: inline-block;
+    background: linear-gradient(90deg,#F585D1, #C63B7C, #892966, #45164D, #892966, #C63B7C, #F585D1);
+    background-size: 400% 400%;
+    animation: rainbow 5s linear infinite alternate;
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', monospace;
+}
+.sous {
+    display: none;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    background: white;
+    min-width: 180px;
+    border-radius: 0 0 15px 15px;
+    z-index: 100;
+    font-family: 'Press Start 2P', monospace;
+    color : black;
+}
+.sous li {
+    list-style: none;
+}
+.sous li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.sous li a:hover {
+    background: #444;
+    color : white;
+}
+.sous.show {
+    display: block;
+}
+
+.statsperso {
+    font-family: "Press Start 2P", monospace;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px
+}
+
+.btn-group {
+    display: inline-flex;
+    gap: 8px; /* espace entre les boutons */
+    align-items: center;
+}
+
+.online {
+    color: green;
+    font-weight: bold;
+}
+
+.offline {
+    color: red;
+    font-weight: bold;
+}
+
+.RUSH_HOUR{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100vw;    
+    margin: 0;
+}
+
+table.grille {
+    border-collapse: collapse;
+}
+
+table.grille td {
+    aspect-ratio: 1 / 1;
+    left:-23px;
+    top:25px;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    background-color: #222;
+    position: relative;
+}
+
+table.grille img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+
+.rotate-90_milieu {
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;
+    transform: rotate(270deg);
+    position: relative;
+    
+}
+img.rotate-90_avant{
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;
+    position: relative;
+    left:30px;
+    transform: rotate(270deg);
+    transform-origin: center center;
+
+}
+img.rotate-90_arriere{
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;
+    position: relative;
+    left:-30px;
+    transform: rotate(270deg);
+    transform-origin: center center;
+}
+
+.rotate-180_milieu {
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;      /* Allonge verticalement */
+    transform-origin: center center;
+    position: relative;
+    
+}
+
+img.rotate-180_avant{
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;
+    position: relative;
+    top:30px;
+    transform-origin: center center;
+}
+img.rotate-180_arriere{
+    width: 100% !important ;       /* Allonge horizontalement */
+    height: 100% !important ;
+    position: relative;
+    top:-30px;
+    transform-origin: center center;
+
+}
+
+#victoire-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,1);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.victoire-message {
+  background: #fff;
+  color: #222;
+  padding: 40px 30px;
+  border-radius: 20px;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: popin 0.5s;
+  font: 100 1em 'Press Start 2P', monospace;
+}
+@keyframes popin {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.victoire-message button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: "Press Start 2P", monospace;
+}
+.victoire-message button:hover {
+  background: #388e3c;
+}
